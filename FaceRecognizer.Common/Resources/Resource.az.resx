@@ -1,0 +1,453 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ACCESS_DENIED" xml:space="preserve">
+    <value>Qadağandır</value>
+  </data>
+  <data name="ACCESS_TOKEN" xml:space="preserve">
+    <value>Access (icazə) token</value>
+  </data>
+  <data name="ACTIVE" xml:space="preserve">
+    <value>Aktiv</value>
+  </data>
+  <data name="BIRTH_ADDRESS" xml:space="preserve">
+    <value>Doğum ünvanı</value>
+  </data>
+  <data name="BIRTH_DATE" xml:space="preserve">
+    <value>Doğum tarixi</value>
+  </data>
+  <data name="BLOCKED" xml:space="preserve">
+    <value>Bloklanmış</value>
+  </data>
+  <data name="BRANCH_CODE" xml:space="preserve">
+    <value>Filial kodu</value>
+  </data>
+  <data name="BRANCH_CODE_İS_EXİST" xml:space="preserve">
+    <value>Filial kodu artıq mövcuddur</value>
+  </data>
+  <data name="BRANCH_IS_NOT_CORRESPOND_WITH_ORGANIZATION" xml:space="preserve">
+    <value>Filial quruma uyğun deyil</value>
+  </data>
+  <data name="BRANCH_IS_NOT_EXIST" xml:space="preserve">
+    <value>Filial tapılmadı</value>
+  </data>
+  <data name="CANNOT_SIGNED" xml:space="preserve">
+    <value>Uğursuz imzalama</value>
+  </data>
+  <data name="CITIZENSHIP_DOES_NOT_EXIST" xml:space="preserve">
+    <value>Vətəndaşlıq növü mövcud deyil</value>
+  </data>
+  <data name="CLAIM_DOES_NOT_EXIST" xml:space="preserve">
+    <value>Hüquq tapılmadı</value>
+  </data>
+  <data name="COMPARE" xml:space="preserve">
+    <value>{0} və {1} fərqlidir</value>
+  </data>
+  <data name="CONCRETE_LENGTH" xml:space="preserve">
+    <value>{0} uzunluğu  {1} olmalıdır</value>
+  </data>
+  <data name="CONTACT_NUMBER" xml:space="preserve">
+    <value>Əlaqə nömrəsi</value>
+  </data>
+  <data name="CONTRACT_FILE_DOES_NOT_EXIST" xml:space="preserve">
+    <value>Müqavilə faylı tapılmadı</value>
+  </data>
+  <data name="CONTRACT_FILE_IS_EXIST" xml:space="preserve">
+    <value>Müqavilə faylı artıq mövcuddur</value>
+  </data>
+  <data name="CONTRACT_FILE_TYPE_DOES_NOT_EXIST" xml:space="preserve">
+    <value>Müqavile faylın tipi mövcud deyil </value>
+  </data>
+  <data name="CONTRACT_IS_NOT_EXIST" xml:space="preserve">
+    <value>Müqavilə tapılmadı</value>
+  </data>
+  <data name="CONTRACT_STATUS_DOES_NOT_EXİST" xml:space="preserve">
+    <value>Müqavilə statusu tapılmadı</value>
+  </data>
+  <data name="DELIVERY_ADDRESS" xml:space="preserve">
+    <value>Çatdırılma ünvanı</value>
+  </data>
+  <data name="DESCRIPTION" xml:space="preserve">
+    <value>Təsvir</value>
+  </data>
+  <data name="DOCUMENT_NUMBER" xml:space="preserve">
+    <value>Sənədin nömrəsi</value>
+  </data>
+  <data name="DOCUMENT_PIN_IS_EXIST" xml:space="preserve">
+    <value>Sənədin fin kodu artiq mövcuddur</value>
+  </data>
+  <data name="DOCUMENT_PİN" xml:space="preserve">
+    <value>Sənədin fin kodu</value>
+  </data>
+  <data name="DOCUMENT_TYPE" xml:space="preserve">
+    <value>Sənədin növü</value>
+  </data>
+  <data name="DOCUMENT_TYPE_IS_NOT_EXIST" xml:space="preserve">
+    <value>Sənəd növü tapılmadı</value>
+  </data>
+  <data name="EMAIL_IS_EXIST" xml:space="preserve">
+    <value>E-poçt artıq mövcuddur</value>
+  </data>
+  <data name="EMAIL_IS_NOT_VALID" xml:space="preserve">
+    <value>E-poçt formatı düzgün deyil</value>
+  </data>
+  <data name="EMAİL" xml:space="preserve">
+    <value>E-poçt</value>
+  </data>
+  <data name="EXPIRY_DATE" xml:space="preserve">
+    <value>Bitmə tarixi</value>
+  </data>
+  <data name="FAILED_LOGOUT" xml:space="preserve">
+    <value>Logout operasiyası uğursuzdur</value>
+  </data>
+  <data name="FAILED_REFRESH_OPERATION" xml:space="preserve">
+    <value>Refresh tokenin uğursuz yenilənməsi</value>
+  </data>
+  <data name="FEMALE" xml:space="preserve">
+    <value>Qadın</value>
+  </data>
+  <data name="FILENAME" xml:space="preserve">
+    <value>Faylın adı</value>
+  </data>
+  <data name="FILE_CANNOT_SAVED" xml:space="preserve">
+    <value>Fayl yazılmadı</value>
+  </data>
+  <data name="FINGERPRINT_PHOTO_WAS_NOT_FOUND" xml:space="preserve">
+    <value>Barmaq izi tapılmadı</value>
+  </data>
+  <data name="FIRSTNAME" xml:space="preserve">
+    <value>Ad</value>
+  </data>
+  <data name="GENDER" xml:space="preserve">
+    <value>Cins</value>
+  </data>
+  <data name="GENDER_TYPE_DOES_NOT_EXIST" xml:space="preserve">
+    <value>Cins tipi tapılmadı</value>
+  </data>
+  <data name="GREATERTHANOREQUALTO" xml:space="preserve">
+    <value>{0} {1}  böyük və ya  {1} - bərabər olmalıdır</value>
+  </data>
+  <data name="GREATER_THAN" xml:space="preserve">
+    <value>{0} {1} böyük olmalıdır</value>
+  </data>
+  <data name="IMAGE_NOT_FOUND" xml:space="preserve">
+    <value>Şəkil tapılmadı</value>
+  </data>
+  <data name="INCORRECT_PASSWORD" xml:space="preserve">
+    <value>Şifrə düzgün deyil</value>
+  </data>
+  <data name="INTERNAL_ERROR" xml:space="preserve">
+    <value>Daxili xəta</value>
+  </data>
+  <data name="INVALID" xml:space="preserve">
+    <value>{0}  düzgün deyil</value>
+  </data>
+  <data name="INVALID_FILETYPE" xml:space="preserve">
+    <value>Faylın növü düzgün deyil</value>
+  </data>
+  <data name="INVALID_FILE_COUNT" xml:space="preserve">
+    <value>Faylların maksimal sayı {0} olmalıdır</value>
+  </data>
+  <data name="INVALID_INPUT" xml:space="preserve">
+    <value>Daxil olunmuş məlumat düzgün deyil</value>
+  </data>
+  <data name="INVALID_NUMBER_FORMAT" xml:space="preserve">
+    <value>Nömrə formatı düzgün deyil</value>
+  </data>
+  <data name="INVALID_PIN" xml:space="preserve">
+    <value>{0} düzgün deyil</value>
+  </data>
+  <data name="INVALID_PINCODE" xml:space="preserve">
+    <value>{0} düzgün deyil</value>
+  </data>
+  <data name="ISDIGIT" xml:space="preserve">
+    <value>Ən azı bir rəqəm simvolu olmalıdır</value>
+  </data>
+  <data name="ISSUED_DATE" xml:space="preserve">
+    <value>Buraxılış tarixi</value>
+  </data>
+  <data name="IS_EMPTY" xml:space="preserve">
+    <value>{0} doldurulmamışdır</value>
+  </data>
+  <data name="IS_EMPTY_OR_UNCORRECT_LENGTH" xml:space="preserve">
+    <value>{0} boş ola bilməz və  {1}-{2} aralığında olmalıdır</value>
+  </data>
+  <data name="IS_EXIST" xml:space="preserve">
+    <value>{0} artıq mövcuddur</value>
+  </data>
+  <data name="IS_NOT_EXIST" xml:space="preserve">
+    <value>{0} mövcud deyil</value>
+  </data>
+  <data name="IS_NOT_VALID" xml:space="preserve">
+    <value>{0} düzgün deyil</value>
+  </data>
+  <data name="IS_REQUIRED" xml:space="preserve">
+    <value>{0} doldurulmalıdır</value>
+  </data>
+  <data name="LASTNAME" xml:space="preserve">
+    <value>Soyad</value>
+  </data>
+  <data name="LENGTH" xml:space="preserve">
+    <value>{0} uzunluğu  {1}-{2} aralığında olmalıdır</value>
+  </data>
+  <data name="LESSTHANOREQUALTO" xml:space="preserve">
+    <value>{0} {1} kiçik və ya {1} bərabər olmalıdır</value>
+  </data>
+  <data name="LESS_THAN" xml:space="preserve">
+    <value>{0} {1} kiçik olmalıdır</value>
+  </data>
+  <data name="LEVEL_IS_NOT_EXIST" xml:space="preserve">
+    <value>Dərəcə mövcud deyil</value>
+  </data>
+  <data name="LOWERCASE" xml:space="preserve">
+    <value>Ən azı bir simvol kiçik hərf olmalıdır</value>
+  </data>
+  <data name="MALE" xml:space="preserve">
+    <value>Kişi</value>
+  </data>
+  <data name="MAXIMUMLENGTH" xml:space="preserve">
+    <value>{0} maksimal uzunluğu  {1} olmalıdır</value>
+  </data>
+  <data name="MIMETYPE_IS_NOT_MULTIPART" xml:space="preserve">
+    <value>MİME növü multipart/form-data formatında deyil</value>
+  </data>
+  <data name="MINIMUMLENGTH" xml:space="preserve">
+    <value>{0} minimal uzunluğu  {1} olmalıdır</value>
+  </data>
+  <data name="MSISDN" xml:space="preserve">
+    <value>Msisdn</value>
+  </data>
+  <data name="NAME" xml:space="preserve">
+    <value>Ad</value>
+  </data>
+  <data name="NOTEMPTY" xml:space="preserve">
+    <value>{0} boş ola bilməz</value>
+  </data>
+  <data name="NO_VERIFCATION_KEY_REQUIRED" xml:space="preserve">
+    <value>Verifikasiya açarı tələb olunmur</value>
+  </data>
+  <data name="NUMBER" xml:space="preserve">
+    <value>Nömrə</value>
+  </data>
+  <data name="OLD_PASSWORD" xml:space="preserve">
+    <value>Köhnə şifrə</value>
+  </data>
+  <data name="OPERATION_TYPE_IS_NOT_EXIST" xml:space="preserve">
+    <value>Əməliyyat növü tapılmadı</value>
+  </data>
+  <data name="ORGANIZATION_DOES_NOT_EXIST" xml:space="preserve">
+    <value>Qurum mövcud deyil</value>
+  </data>
+  <data name="ORGANIZATION_NAME_IS_EXIST" xml:space="preserve">
+    <value>Qurumun adı artıq mövcuddur</value>
+  </data>
+  <data name="PASSWORD" xml:space="preserve">
+    <value>Şifrə</value>
+  </data>
+  <data name="PATRONYMIC" xml:space="preserve">
+    <value>Ata adı</value>
+  </data>
+  <data name="PERSON_IS_NOT_EXIST" xml:space="preserve">
+    <value>Fiziki şəxs tapılmadı</value>
+  </data>
+  <data name="PHOTO_WAS_NOT_FOUND" xml:space="preserve">
+    <value>Şəkil tapılmadı</value>
+  </data>
+  <data name="PIN" xml:space="preserve">
+    <value>Fin</value>
+  </data>
+  <data name="PIN_NOT_EXIST_OR_EXPIRED" xml:space="preserve">
+    <value>Fin kod tapılmadı və ya vaxtı keçib</value>
+  </data>
+  <data name="PLACE_ADDRESS" xml:space="preserve">
+    <value>Ərazinin ünvanı</value>
+  </data>
+  <data name="PLACE_NAME" xml:space="preserve">
+    <value>Ərazinin adı</value>
+  </data>
+  <data name="REFRESH_TOKEN" xml:space="preserve">
+    <value>Refresh (yeniləyəmə ) token</value>
+  </data>
+  <data name="REGION_DOES_NOT_EXIST" xml:space="preserve">
+    <value>Bölgə mövcud deyil</value>
+  </data>
+  <data name="REGISTERED_ADDRESS" xml:space="preserve">
+    <value>Qeydiyyat ünvanı</value>
+  </data>
+  <data name="ROLE_DOES_NOT_EXIST" xml:space="preserve">
+    <value>Rol mövcud deyil</value>
+  </data>
+  <data name="ROLE_GROUP_DOES_NOT_EXIST" xml:space="preserve">
+    <value>Rol qrupu mövcud deyil</value>
+  </data>
+  <data name="SAME_FILE_NAME" xml:space="preserve">
+    <value>Faylın adı eyni ola bilməz</value>
+  </data>
+  <data name="SAME_PASSWORD" xml:space="preserve">
+    <value>Yeni şifrə köhnə ilə eynidir</value>
+  </data>
+  <data name="SERIES" xml:space="preserve">
+    <value>Seriya</value>
+  </data>
+  <data name="TARIF_IS_NOT_EXIST" xml:space="preserve">
+    <value>Tarif mövcud deyil</value>
+  </data>
+  <data name="UNAUTHORIZED" xml:space="preserve">
+    <value>İcazəsiz</value>
+  </data>
+  <data name="UNHANDLED_EXCEPTION" xml:space="preserve">
+    <value>Naməlum xəta</value>
+  </data>
+  <data name="UPPERCASE" xml:space="preserve">
+    <value>Ən azı bir simvol böyük hərf olmalıdır</value>
+  </data>
+  <data name="USERNAME" xml:space="preserve">
+    <value>İstifadəçi adı</value>
+  </data>
+  <data name="USERNAME_AND_PASSWORD_DOESNT_MATCH" xml:space="preserve">
+    <value>İstifadəçi adı və ya  şifrə düzgün deyil</value>
+  </data>
+  <data name="USERNAME_IS_EXIST" xml:space="preserve">
+    <value>İstifadəçi adı artiq mövcuddur</value>
+  </data>
+  <data name="USER_FILE_DOES_NOT_EXIST" xml:space="preserve">
+    <value>İstifadəçi faylı tapılmadı</value>
+  </data>
+  <data name="USER_FILE_IS_EXIST" xml:space="preserve">
+    <value>İstifadəçi faylı artıq mövcuddur</value>
+  </data>
+  <data name="USER_FILE_TYPE_DOES_NOT_EXIST" xml:space="preserve">
+    <value>İstifadəçi faylın tipi mövcud deyil</value>
+  </data>
+  <data name="USER_IS_BLOCKED" xml:space="preserve">
+    <value>İstifadəçi bloklanıb</value>
+  </data>
+  <data name="USER_IS_NOT_EXIST" xml:space="preserve">
+    <value>İstifadəçi tapılmadı</value>
+  </data>
+  <data name="USER_IS_NOT_EXPERT_OR_COMMON" xml:space="preserve">
+    <value>İstifadəçi expert və ya ümumi deyil</value>
+  </data>
+  <data name="USER_STATUS_IS_NOT_EXIST" xml:space="preserve">
+    <value>İstifadəçi statusu mövcud deyil</value>
+  </data>
+  <data name="VOEN_SUN_IS_NOT_EXIST" xml:space="preserve">
+    <value>VÖEN mövcud deyil</value>
+  </data>
+</root>

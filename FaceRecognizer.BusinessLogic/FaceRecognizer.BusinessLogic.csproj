@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E79804E6-422B-4B9F-9935-83F717FBFFDB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FaceRecognizer.BusinessLogic</RootNamespace>
+    <AssemblyName>FaceRecognizer.BusinessLogic</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Logic.cs" />
+    <Compile Include="Logic\Cache\PinCache.cs" />
+    <Compile Include="Logic\Cache\PinSessionInfo.cs" />
+    <Compile Include="Logic\Cache\TokenCache.cs" />
+    <Compile Include="Logic\Cache\TokenSessionInfo.cs" />
+    <Compile Include="Logic\ClaimLogic\GetClaims.cs" />
+    <Compile Include="Logic\ContractLogic\AddContract.cs" />
+    <Compile Include="Logic\ContractLogic\CheckContract.cs" />
+    <Compile Include="Logic\ContractLogic\DownloadContract.cs" />
+    <Compile Include="Logic\ContractLogic\GetCitizenshipTypes.cs" />
+    <Compile Include="Logic\ContractLogic\GetContractFileTypes.cs" />
+    <Compile Include="Logic\ContractLogic\GetGenderTypes.cs" />
+    <Compile Include="Logic\RoleLogic\AddRoleGroup.cs" />
+    <Compile Include="Logic\RoleLogic\EditRoleGroup.cs" />
+    <Compile Include="Logic\UserLogic\DownloadUserFile.cs" />
+    <Compile Include="Logic\ContractLogic\GetContract.cs" />
+    <Compile Include="Logic\ContractLogic\GetContracts.cs" />
+    <Compile Include="Logic\ContractLogic\GetContractStatuses.cs" />
+    <Compile Include="Logic\ContractLogic\GetDocumentTypes.cs" />
+    <Compile Include="Logic\ContractLogic\GetOperationTypes.cs" />
+    <Compile Include="Logic\ContractLogic\GetSubscriptionTypes.cs" />
+    <Compile Include="Logic\ContractLogic\GetTarifs.cs" />
+    <Compile Include="Logic\ContractLogic\UpdateContractStatus.cs" />
+    <Compile Include="Logic\ContractLogic\UploadContract.cs" />
+    <Compile Include="Logic\BranchLogic\AddBranch.cs" />
+    <Compile Include="Logic\BranchLogic\EditBranch.cs" />
+    <Compile Include="Logic\BranchLogic\GetBranchById.cs" />
+    <Compile Include="Logic\BranchLogic\GetBranches.cs" />
+    <Compile Include="Logic\OrganizationLogic\AddOrganization.cs" />
+    <Compile Include="Logic\OrganizationLogic\EditOrganization.cs" />
+    <Compile Include="Logic\OrganizationLogic\GetOrganizations.cs" />
+    <Compile Include="Logic\RegionLogic\GetRegions.cs" />
+    <Compile Include="Logic\RoleLogic\AddRole.cs" />
+    <Compile Include="Logic\RoleLogic\EditRole.cs" />
+    <Compile Include="Logic\RoleLogic\GetRoleGroups.cs" />
+    <Compile Include="Logic\RoleLogic\GetRoleLevels.cs" />
+    <Compile Include="Logic\RoleLogic\GetRoles.cs" />
+    <Compile Include="Logic\UserLogic\CreateUser.cs" />
+    <Compile Include="Logic\UserLogic\EditUser.cs" />
+    <Compile Include="Logic\UserLogic\GetDataDto.cs" />
+    <Compile Include="Logic\UserLogic\GetUserById.cs" />
+    <Compile Include="Logic\UserLogic\GetUserFileTypes.cs" />
+    <Compile Include="Logic\UserLogic\GetUsers.cs" />
+    <Compile Include="Logic\UserLogic\LoginCheck.cs" />
+    <Compile Include="Logic\UserLogic\LoginMobileUser.cs" />
+    <Compile Include="Logic\UserLogic\LoginUser.cs" />
+    <Compile Include="Logic\UserLogic\PasswordChange.cs" />
+    <Compile Include="Logic\UserLogic\PasswordReset.cs" />
+    <Compile Include="Logic\UserLogic\GetUserStatuses.cs" />
+    <Compile Include="Logic\UserLogic\UploadUserFile.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FaceRecognizer.Common\FaceRecognizer.Common.csproj">
+      <Project>{BE433C7A-83E0-4F7D-97B0-7EFCDF66FD9A}</Project>
+      <Name>FaceRecognizer.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FaceRecognizer.DataAccess\FaceRecognizer.DataAccess.csproj">
+      <Project>{88E12140-2138-494D-9767-D8DF633645A2}</Project>
+      <Name>FaceRecognizer.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FaceRecognizer.Models\FaceRecognizer.Models.csproj">
+      <Project>{4825E469-1FFD-4653-B18D-7429C5C95AAB}</Project>
+      <Name>FaceRecognizer.Models</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="log4net">
+      <Version>2.0.8</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

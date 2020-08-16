@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{73DD10C6-E2C4-4962-91D9-F578F27084D9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FaceRecognizer.Services</RootNamespace>
+    <AssemblyName>FaceRecognizer.Services</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\ClaimService\ClaimService.cs" />
+    <Compile Include="Services\ClaimService\IClaimService.cs" />
+    <Compile Include="Services\ContractServices\ContractService.cs" />
+    <Compile Include="Services\ContractServices\IContractService.cs" />
+    <Compile Include="Services\BranchServices\BranchService.cs" />
+    <Compile Include="Services\BranchServices\IBranchService.cs" />
+    <Compile Include="Services\OrganizationServices\IOrganizationService.cs" />
+    <Compile Include="Services\OrganizationServices\OrganizationService.cs" />
+    <Compile Include="Services\RegionService\IRegionService.cs" />
+    <Compile Include="Services\RegionService\RegionService.cs" />
+    <Compile Include="Services\RoleServices\IRoleService.cs" />
+    <Compile Include="Services\RoleServices\RoleService.cs" />
+    <Compile Include="Services\UserServices\IUserService.cs" />
+    <Compile Include="Services\UserServices\UserService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FaceRecognizer.BusinessLogic\FaceRecognizer.BusinessLogic.csproj">
+      <Project>{E79804E6-422B-4B9F-9935-83F717FBFFDB}</Project>
+      <Name>FaceRecognizer.BusinessLogic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FaceRecognizer.Common\FaceRecognizer.Common.csproj">
+      <Project>{BE433C7A-83E0-4F7D-97B0-7EFCDF66FD9A}</Project>
+      <Name>FaceRecognizer.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FaceRecognizer.DataAccess\FaceRecognizer.DataAccess.csproj">
+      <Project>{88E12140-2138-494D-9767-D8DF633645A2}</Project>
+      <Name>FaceRecognizer.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FaceRecognizer.Models\FaceRecognizer.Models.csproj">
+      <Project>{4825E469-1FFD-4653-B18D-7429C5C95AAB}</Project>
+      <Name>FaceRecognizer.Models</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Ninject">
+      <Version>3.3.4</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

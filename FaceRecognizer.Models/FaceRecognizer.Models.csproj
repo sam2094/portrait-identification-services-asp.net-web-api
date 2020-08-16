@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4825E469-1FFD-4653-B18D-7429C5C95AAB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FaceRecognizer.Models</RootNamespace>
+    <AssemblyName>FaceRecognizer.Models</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DTOs\CitizenshipTypes\CitizenshipTypeDto.cs" />
+    <Compile Include="DTOs\ClaimDtos\ClaimDto.cs" />
+    <Compile Include="DTOs\ContractDtos\ContractsDto.cs" />
+    <Compile Include="DTOs\ContractDtos\GenderDto.cs" />
+    <Compile Include="DTOs\ContractDtos\GetContractDto.cs" />
+    <Compile Include="DTOs\FileTypeDto\ContractFileTypeDto.cs" />
+    <Compile Include="DTOs\FileTypeDto\UserFileTypeDto.cs" />
+    <Compile Include="DTOs\RoleDtos\GetRoleGroupsDto.cs" />
+    <Compile Include="DTOs\RoleDtos\GetRolesDto.cs" />
+    <Compile Include="DTOs\RoleDtos\RoleLevelDto.cs" />
+    <Compile Include="DTOs\TarifsDto\GetTarifsDto.cs" />
+    <Compile Include="DTOs\ContractStatusesDto\ContractStatusDto.cs" />
+    <Compile Include="DTOs\BranchDtos\BranchDto.cs" />
+    <Compile Include="DTOs\DocumentTypesDto\DocumentTypeDto.cs" />
+    <Compile Include="DTOs\OperationTypesDto\OperationTypeDto.cs" />
+    <Compile Include="DTOs\OrganizationDtos\OrganizationsDto.cs" />
+    <Compile Include="DTOs\RegionsDtos\RegionDto.cs" />
+    <Compile Include="DTOs\SubscriptionTypesDto\SubscriptionTypeDto.cs" />
+    <Compile Include="DTOs\UserDtos\GetUserByIdDto.cs" />
+    <Compile Include="DTOs\UserDtos\LoginMobileUserDto.cs" />
+    <Compile Include="DTOs\UserDtos\UsersDto.cs" />
+    <Compile Include="DTOs\UserStatusesDtos\UserStatusDto.cs" />
+    <Compile Include="Entities\BaseEntity.cs" />
+    <Compile Include="Entities\Contract.cs" />
+    <Compile Include="Entities\ContractFile.cs" />
+    <Compile Include="Entities\ContractFileType.cs" />
+    <Compile Include="Entities\ContractStatus.cs" />
+    <Compile Include="Entities\Citizenship.cs" />
+    <Compile Include="Entities\Branch.cs" />
+    <Compile Include="Entities\DocumentInformation.cs" />
+    <Compile Include="Entities\DocumentType.cs" />
+    <Compile Include="Entities\Gender.cs" />
+    <Compile Include="Entities\OperationType.cs" />
+    <Compile Include="Entities\Claim.cs" />
+    <Compile Include="Entities\Organization.cs" />
+    <Compile Include="Entities\Region.cs" />
+    <Compile Include="Entities\Role.cs" />
+    <Compile Include="Entities\RoleGroup.cs" />
+    <Compile Include="Entities\SubscriptionType.cs" />
+    <Compile Include="Entities\Tarif.cs" />
+    <Compile Include="Entities\TokenStatus.cs" />
+    <Compile Include="Entities\UserFile.cs" />
+    <Compile Include="Entities\UserFileType.cs" />
+    <Compile Include="Entities\UserStatus.cs" />
+    <Compile Include="Entities\Token.cs" />
+    <Compile Include="Entities\User.cs" />
+    <Compile Include="LogicInput.cs" />
+    <Compile Include="LogicOutput.cs" />
+    <Compile Include="LogicParameters\ClaimLogic\GetClaims.cs" />
+    <Compile Include="LogicParameters\ContractLogic\AddContract.cs" />
+    <Compile Include="LogicParameters\ContractLogic\CheckContract.cs" />
+    <Compile Include="LogicParameters\ContractLogic\DownloadContract.cs" />
+    <Compile Include="LogicParameters\ContractLogic\GetCitizenshipTypes.cs" />
+    <Compile Include="LogicParameters\ContractLogic\GetContract.cs" />
+    <Compile Include="LogicParameters\ContractLogic\GetContractFileTypes.cs" />
+    <Compile Include="LogicParameters\ContractLogic\GetContracts.cs" />
+    <Compile Include="LogicParameters\ContractLogic\GetContractStatuses.cs" />
+    <Compile Include="LogicParameters\ContractLogic\GetDocumentTypes.cs" />
+    <Compile Include="LogicParameters\ContractLogic\GetGenderTypes.cs" />
+    <Compile Include="LogicParameters\ContractLogic\GetOperationTypes.cs" />
+    <Compile Include="LogicParameters\ContractLogic\GetSubscriptionTypes.cs" />
+    <Compile Include="LogicParameters\ContractLogic\GetTarifs.cs" />
+    <Compile Include="LogicParameters\ContractLogic\UpdateContractStatus.cs" />
+    <Compile Include="LogicParameters\ContractLogic\UploadContract.cs" />
+    <Compile Include="LogicParameters\BranchLogic\AddBranch.cs" />
+    <Compile Include="LogicParameters\BranchLogic\GetBranchById.cs" />
+    <Compile Include="LogicParameters\BranchLogic\EditBranch.cs" />
+    <Compile Include="LogicParameters\BranchLogic\GetBranches.cs" />
+    <Compile Include="LogicParameters\OrganizationLogic\AddOrganization.cs" />
+    <Compile Include="LogicParameters\OrganizationLogic\EditOrganization.cs" />
+    <Compile Include="LogicParameters\OrganizationLogic\GetOrganizations.cs" />
+    <Compile Include="LogicParameters\RegionLogic\GetRegions.cs" />
+    <Compile Include="LogicParameters\RoleLogic\AddRole.cs" />
+    <Compile Include="LogicParameters\RoleLogic\AddRoleGroup.cs" />
+    <Compile Include="LogicParameters\RoleLogic\EditRole.cs" />
+    <Compile Include="LogicParameters\RoleLogic\EditRoleGroup.cs" />
+    <Compile Include="LogicParameters\RoleLogic\GetRoleGroups.cs" />
+    <Compile Include="LogicParameters\RoleLogic\GetRoleLevel.cs" />
+    <Compile Include="LogicParameters\RoleLogic\GetRoles.cs" />
+    <Compile Include="LogicParameters\UserLogic\CreateUser.cs" />
+    <Compile Include="LogicParameters\UserLogic\DownloadUserFile.cs" />
+    <Compile Include="LogicParameters\UserLogic\EditUser.cs" />
+    <Compile Include="LogicParameters\UserLogic\GetUserById.cs" />
+    <Compile Include="LogicParameters\UserLogic\GetUserFileTypes.cs" />
+    <Compile Include="LogicParameters\UserLogic\GetUsers.cs" />
+    <Compile Include="LogicParameters\UserLogic\LoginCheck.cs" />
+    <Compile Include="LogicParameters\UserLogic\LoginMobileUser.cs" />
+    <Compile Include="LogicParameters\UserLogic\LoginUser.cs" />
+    <Compile Include="LogicParameters\UserLogic\PasswordChange.cs" />
+    <Compile Include="LogicParameters\UserLogic\PasswordReset.cs" />
+    <Compile Include="LogicParameters\UserLogic\UploadUserFile.cs" />
+    <Compile Include="LogicParameters\UserStatusLogic\GetUserStatuses.cs" />
+    <Compile Include="LogicResult.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="FluentValidation">
+      <Version>8.5.0</Version>
+    </PackageReference>
+    <PackageReference Include="FluentValidation.WebApi">
+      <Version>8.5.0</Version>
+    </PackageReference>
+    <PackageReference Include="log4net">
+      <Version>2.0.8</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FaceRecognizer.Common\FaceRecognizer.Common.csproj">
+      <Project>{BE433C7A-83E0-4F7D-97B0-7EFCDF66FD9A}</Project>
+      <Name>FaceRecognizer.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
